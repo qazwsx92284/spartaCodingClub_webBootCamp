@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <title>핫도그를 주문!</title>
+    <style>
+        * {
+            font-family: 'Stylish', sans-serif;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: 30px auto;
+        }
+
+        .img {
+            width: 500px;
+            height: 300px;
+            background-image: url("https://images.unsplash.com/photo-1524237629218-0a109277890c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+            background-position: center;
+            background-size: cover;
+            margin: 30px auto;
+        }
+
+        .price {
+          font-size: 24px;
+        }
+
+        .btn_order {
+          width: 80px;
+          display: block;
+          margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="wrap">
+      <div class="img"></div>
+      <h1>핫도그를 팝니다 <span class="price">가격:4,000원/개</span></h1>
+      <p>이 핫도그를 먹으면 엄청 배가 부릅니다. 너무너무 맛있어요. 건강에도 좋고 피부에도 좋습니다. 키가 커지고 살은 빠집니다. 성격도 유해지고 얼굴도 잘 생겨집니다</p>
+      <div class="form">
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">주문자이름</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">수량</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>--수량을 선택하세요--</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4</option>
+                  <option value="3">5</option>
+              </select>
+          </div>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default1">주소</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default2">전화번호</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+      </div>
+      <button type="button" class="btn btn-primary btn_order">주문하기</button>
+  </div>
+
+
+</body>
+
+</html>
