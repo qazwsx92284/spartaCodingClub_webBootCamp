@@ -51,7 +51,29 @@
           display: block;
           margin: auto;
         }
+        .dollar_rate {
+            color: blue;
+        }
     </style>
+    <script>
+        $(document).ready(function () {
+            getCurrentRate();
+        });
+
+        function getCurrentRate() {
+            $.ajax({
+                type: "GET",
+                url: "https://api.manana.kr/exchange/rate.json",
+                data: {},
+                success: function (response) {
+                    let currentDollar = response[1]['rate']
+                    $('#dollar').text(currentDollar);
+                }
+            })
+        }
+
+
+    </script>
 </head>
 
 <body>
@@ -59,6 +81,7 @@
       <div class="img"></div>
       <h1>핫도그를 팝니다 <span class="price">가격:4,000원/개</span></h1>
       <p>이 핫도그를 먹으면 엄청 배가 부릅니다. 너무너무 맛있어요. 건강에도 좋고 피부에도 좋습니다. 키가 커지고 살은 빠집니다. 성격도 유해지고 얼굴도 잘 생겨집니다</p>
+      <p class="dollar_rate">달러-원 환율: <span id="dollar">1000.00</span></p>
       <div class="form">
           <div class="input-group mb-3">
               <div class="input-group-prepend">
